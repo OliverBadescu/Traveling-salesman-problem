@@ -11,11 +11,47 @@ public class ComisVoiajorRomania extends JFrame {
 
     private final String caleImagine = "C:\\Users\\oliba\\Desktop\\proiect\\Comis Voiajor\\src\\proiect\\img\\harta-romania-schimbata-12-judete-tudor-benga-832012.jpg";
     private final List<Oras> orase = Arrays.asList(
-            new Oras("București", 435, 525),
-            new Oras("Cluj-Napoca", 225, 175),
-            new Oras("Timișoara", 50, 340),
-            new Oras("Iași", 590, 140),
-            new Oras("Constanța", 530, 640)
+            new Oras("București", 725, 625),
+            new Oras("Cluj-Napoca", 390, 290),
+            new Oras("Timișoara", 150, 390),
+            new Oras("Iași", 840, 210),
+            new Oras("Constanța", 950, 670),
+            new Oras("Alba Iulia", 425, 365),
+            new Oras("Arad", 190, 355),
+            new Oras("Pitești", 575, 585),
+            new Oras("Bacău", 770, 320),
+            new Oras("Oradea", 300, 235),
+            new Oras("Bistrița", 540, 255),
+            new Oras("Botoșani", 760, 150),
+            new Oras("Brăila", 870, 500),
+            new Oras("Brașov", 605, 430),
+            new Oras("Buzău", 800, 545),
+            new Oras("Reșița", 265, 490),
+            new Oras("Călărași", 840, 650),
+            new Oras("Sfântu Gheorghe", 670, 395),
+            new Oras("Târgu Mureș", 540, 320),
+            new Oras("Craiova", 460, 650),
+            new Oras("Drobeta-Turnu Severin", 350, 590),
+            new Oras("Galați", 870, 460),
+            new Oras("Giurgiu", 680, 700),
+            new Oras("Deva", 390, 420),
+            new Oras("Slobozia", 840, 600),
+            new Oras("Suceava", 700, 165),
+            new Oras("Alexandria", 630, 690),
+            new Oras("Târgu Jiu", 420, 555),
+            new Oras("Miercurea Ciuc", 670, 340),
+            new Oras("Satu Mare", 380, 150),
+            new Oras("Piatra Neamț", 740, 265),
+            new Oras("Târgoviște", 640, 565),
+            new Oras("Tulcea", 990, 530),
+            new Oras("Vaslui", 865, 300),
+            new Oras("Râmnicu Vâlcea", 500, 550),
+            new Oras("Focșani", 820, 440),
+            new Oras("Zalău", 400, 240),
+            new Oras("Sibiu", 520, 430),
+            new Oras("Slatina", 530, 630),
+            new Oras("Baia Mare", 470, 150),
+            new Oras("Ploiesti", 700, 535)
 
     );
 
@@ -73,13 +109,13 @@ public class ComisVoiajorRomania extends JFrame {
         g.drawImage(imagineHarta, x, y-45, this);
 
 
-        g.setColor(Color.RED);
+        g.setColor(Color.BLUE);
         for (Oras oras : orase) {
             g.fillOval(oras.x - 5, oras.y - 5, 10, 10);
             g.drawString(oras.nume, oras.x - 15, oras.y - 10);
         }
 
-        g.setColor(Color.BLUE);
+        g.setColor(Color.MAGENTA);
         for (Oras oras : oraseSelectate) {
             g.fillOval(oras.x - 5, oras.y - 5, 10, 10);
             g.drawString(oras.nume, oras.x - 15, oras.y - 10);
